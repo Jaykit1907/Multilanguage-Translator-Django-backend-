@@ -45,13 +45,17 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React frontend
+    "https://multilanguage-translator-mern-client.vercel.app",
 ]
 
 
 # Allow all headers & methods
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
+CSRF_TRUSTED_ORIGINS = ["http://localhost:3000",
+                        "https://multilanguage-translator-mern-client.vercel.app"
+                        
+                        ]
 
 # Disable CSRF for development (Remove this in production)
 CSRF_COOKIE_SECURE = False
